@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* aplicando estilo al header*/
+header {
+    padding: 20px;
+    height: 7vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /*background-image: url('./imagenes/header-image.jpg');*/
+    position: static;
+    background-color: rgb(18, 85, 85, 0.877);
+    position: fixed;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1.5);
+    }
+
+
+
+header .nav-header{
+    padding: 20px;
+    
+}
+header .nav-item{
+    display: inline-block;
+    color: rgb(18, 51, 114);
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+header .link-nav{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    
+}
+
+header .link-nav-contact{
+    text-decoration: none;
+    color: rgb(18, 85, 85, 0.877);
+    background-color: rgb(236, 223, 206);
+    padding: 12px;
+    border-radius: 20px;
+}
+header .nav-item:hover{
+    background-color: rgb(245, 228, 207);
+    border-radius: 20px;
+    transition-duration: 1.5s ;
+
+}
+
+header .link-nav:hover{
+    color: rgb(250, 243, 234);
+}
+
+header .nav-item-contact{
+    display: inline-block;
+    color: rgb(18, 51, 114);
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+header .link-nav-contact:hover{
+    background-color:rgb(18,85,85,0.877) ;
+    color: aliceblue;
+    transition-duration: 2s;
+}
+/*fin de estilos de header*/
+
+
+
+
+
+
+
+/*inicio estilo main*/
+main .contenedor{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+/*defino estilos que quiero que tengan las secciones por defecto*/
+section {
+    height: 125vh;
+    padding: 10px;
+}
+
+
+/*estilos a la primera seccion llamada "presentación"*/
+.presentacion{
+    display: flex;
+    justify-content: space-around;
+    padding: 200px;
+    padding-top: 300px;
+    padding-right: 300px;
+    background-image: url('./imagenes/fondo.png');
+    height: 120vh;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(250, 233, 211);
+    font-family: "Istok Web", sans-serif;
+}
+.presentacion .imgjulieta{
+    padding-left: 16vh;
+}
+
+.presentacion .hola{
+    padding-left: 18vh;
+    font-size:80px;
+}
+
+.presentacion .descripcion{
+    padding-left: 18vh;
+    font-size: 20px;
+    font-weight: lighter;
+    color: bisque;
+}
+.presentacion .imagen-presentacion{
+    padding-top: 60px;
+}
+
+
+
+
+
+
+/*  section "Mis Conocimientos"  */
+#conocimientos-section{
+    display: flex;
+    justify-content: baseline;
+    text-align: center;
+    height: 125vh;
+    background-color: rgb(234, 234, 250);
+    flex-direction: column;
+    padding-top: 15vh;
+}
+.titulo-section-conocimientos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vh;
+}
+.conocimientos-titulo{
+    font-size: 50px;
+    font-weight:990;
+    font-size: 60px;
+    color: rgb(19, 25, 26);
+}
+
+.subtitulo-conocimientos{
+    font-family: "Istok Web", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    padding: 60px;
+    padding-top: 5px;
+}
+
+.cards-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding-left:35vh;
+    padding-right:35vh ;
+
+}
+div .icon-card{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: rgb(211, 211, 211);
+    margin: 20px;
+    width: 270px;
+    height: 270px;
+    font-size: 4.71em ;
+}
+div .icon-card:hover{
+    border-color: rgb(82, 134, 132);
+    transition-duration: 0.8s;
+}
+
+div .fa-brands.fa-html5 {
+    color:rgb(221,75,37);
+}
+div .fa-brands.fa-css3-alt{
+    color: #3d8fc6;
+}
+div .fa-brands.fa-sass{
+    color: #cc6699;
+}
+
+div .fa-brands.fa-js{
+    color:#f0db4f ;
+}
+
+div .fa-brands.fa-react{
+    color: #62dafb;
+}
+
+div .fa-brands.fa-git-alt{
+    color: #f34f29;
+}
+
+div .icon-card .parrafo-icono{
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(115, 119, 119);
+}
+
+.section-frase{
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #90b6cf;
+    height: 70vh;
+    font-size: 40px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.imagen-comillas{
+    height: 100px;
+    width: 100px;
+    
+}
+.frase-comillas{
+    padding: 60px;
+}
+
+.section-proyectos{
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.titulo-proyectos{
+    font-size: 50px;
+    font-weight:990;
+    font-size: 60px;
+    color: rgb(19, 25, 26);
+}
+.parrafo-proyectos{
+    font-size: 18px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bolder;
+
+}
+/* Style the "Contacto" section */
+.contactame {
+    text-align: center;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.links-redes-sociales li {
+    margin: 0 10px;
+}
