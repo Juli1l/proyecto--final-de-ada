@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    padding: 0%;
 }
 body {
     font-family: "Istok Web", sans-serif;
@@ -12,17 +13,24 @@ body {
 /* aplicando estilo al header*/
 header {
     padding: 20px;
-    height: 7vh;
+    height: 10vh;
     display: flex;
     justify-content: end;
     align-items: center;
-    /*background-image: url('./imagenes/header-image.jpg');*/
     position: static;
     background-color: rgb(18, 85, 85, 0.877);
     position: fixed;
     left: 0;
     width: 100%;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1.5);
+    overflow: hidden;
+    }
+
+@media (max-width: 900px) {
+
+        header {
+          display: none;
+        }
     }
 
 
@@ -88,54 +96,119 @@ header .link-nav-contact:hover{
 
 
 
-/*inicio estilo main*/
-main .contenedor{
+
+ .contenedor{
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
+
+
    
 }
 
-
-
-/*defino estilos que quiero que tengan las secciones por defecto*/
-section {
+main section {
     height: 125vh;
-    padding: 10px;
+    padding: 10vh 5%;
+    overflow: hidden;
+
 }
 
 
+
+
 /*estilos a la primera seccion llamada "presentación"*/
-.presentacion{
+.presentacion-section{
     display: flex;
     justify-content: space-around;
     padding: 200px;
     padding-top: 300px;
     padding-right: 300px;
     background-image: url('./imagenes/fondo.png');
-    height: 120vh;
     background-size: cover;
-    background-position: center center;
     color: rgb(250, 233, 211);
     font-family: "Istok Web", sans-serif;
-}
-.presentacion .imgjulieta{
-    padding-left: 16vh;
+    align-items: normal;
 }
 
-.presentacion .hola{
-    padding-left: 18vh;
-    font-size:80px;
+@media (max-width: 900px) {  
+    .presentacion-section {  
+        padding: 100px 50px;  
+        flex-direction: column;  
+        align-items: last baseline;
+    }  
+} 
+
+
+
+.presentacion-section .intro{
+    padding: 16vh;
+
+}
+@media (max-width: 900px) {  
+    .presentacion-section .intro {  
+        padding: 7vh;
+    }  
+}    
+
+
+.presentacion-section .imgjulieta{
+    
+}
+@media(max-width:600px){
+    .presentacion-section .imgjulieta{
+        height:200px;
+        width: 330px;
+        padding-left: 0%;
+    }
+
 }
 
-.presentacion .descripcion{
-    padding-left: 18vh;
+.presentacion-section .hola{
+    font-size:70px;
+    margin: 5%;
+}
+
+
+@media(max-width:600px){
+    .presentacion-section .hola{
+        font-size: 30px;
+        padding-left: 3%;
+    }
+
+}
+
+.presentacion-section .descripcion{
     font-size: 20px;
     font-weight: lighter;
     color: bisque;
 }
-.presentacion .imagen-presentacion{
-    padding-top: 60px;
+@media(max-width:600px){
+    .presentacion-section .descripcion{
+        font-size: 17px;
+        padding-left: 2%;
+    }
+
 }
+
+.presentacion-section .imagen-presentacion{
+    padding: 0%;
+    margin: 190px;
+    margin-left: 0% ;
+    display: flex;
+
+}
+
+@media(max-width:900px){
+    .presentacion-section .imagen-presentacion{
+    margin: 0%;
+    display: flex;
+    height:33%;
+    width: 33%;
+    }
+
+}
+
+
 
 
 
@@ -143,18 +216,18 @@ section {
 
 
 /*  section "Mis Conocimientos"  */
-#conocimientos-section{
-    display: flex;
-    justify-content: baseline;
+.conocimientos-section{
     text-align: center;
-    height: 125vh;
     background-color: rgb(234, 234, 250);
-    flex-direction: column;
-    padding-top: 15vh;
+    overflow: hidden;
+    height: max-content;
 }
+
+
 .titulo-section-conocimientos{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 1vh;
 }
 .conocimientos-titulo{
@@ -163,6 +236,14 @@ section {
     font-size: 60px;
     color: rgb(19, 25, 26);
 }
+@media(max-width:800px){
+    .conocimientos-titulo{
+       font-size: 30px;
+       font-weight: 990;
+    }
+}
+
+
 
 .subtitulo-conocimientos{
     font-family: "Istok Web", sans-serif;
@@ -171,24 +252,35 @@ section {
     padding: 60px;
     padding-top: 5px;
 }
+@media(max-width:800px){
+    .subtitulo-conocimientos{
+       font-size: 15px;
+       padding: 50px;
+    }
+}
+
 
 .cards-skills{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    padding-left:35vh;
-    padding-right:35vh ;
+    margin-inline:25vh ;
+
 
 }
+@media(max-width:800px){
+    .cards-skills{
+        margin-inline:5vh ;
+        padding: 10px;
+    }
+}
+
+
 div .icon-card{
     background-color: rgb(255, 255, 255);
     padding: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border-radius: 10px;
     border-style:solid;
     border-color: rgb(211, 211, 211);
@@ -197,6 +289,19 @@ div .icon-card{
     height: 270px;
     font-size: 4.71em ;
 }
+
+@media(max-width:800px){
+    div .icon-card{
+        margin-inline: 0%;
+        padding: 25px;
+        width: 125px;
+        height: 125px;
+        font-size: 2.30em;
+        margin: 5px;
+    }
+}
+
+
 div .icon-card:hover{
     border-color: rgb(82, 134, 132);
     transition-duration: 0.8s;
@@ -230,26 +335,26 @@ div .icon-card .parrafo-icono{
     color: rgb(115, 119, 119);
 }
 
+
+
 .section-frase{
-    padding: 10vh;
-    display: flex;
-    flex-direction: column;
+    
     text-align: center;
     align-items: center;
     background-color: #90b6cf;
-    height: 70vh;
     font-size: 40px;
     font-family: "Istok Web", sans-serif;
     font-weight: bolder;
     color: aliceblue;
+    height: 90vh;
 }
 
-.imagen-comillas{
+.section-frase .imagen-comillas{
     height: 100px;
     width: 100px;
     
 }
-.frase-comillas{
+.section-frase .frase-comillas{
     padding: 60px;
 }
 
@@ -260,19 +365,24 @@ div .icon-card .parrafo-icono{
     text-align: center;
 
 }
-.titulo-proyectos{
+.section-proyectos  .titulo-proyectos{
     font-size: 50px;
     font-weight:990;
     font-size: 60px;
     color: rgb(19, 25, 26);
 }
-.parrafo-proyectos{
+.section-proyectos .parrafo-proyectos{
     font-size: 18px;
     font-family: "Istok Web", sans-serif;
     font-weight: bolder;
 
+
+
+
+
+
 }
-/* Style the "Contacto" section */
+/*section-contacots */
 .contactame {
     text-align: center;
 }
