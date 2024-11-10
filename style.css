@@ -151,9 +151,7 @@ main section {
 }    
 
 
-.presentacion-section .imgjulieta{
-    
-}
+
 @media(max-width:600px){
     .presentacion-section .imgjulieta{
         height:200px;
@@ -301,10 +299,20 @@ div .icon-card{
     }
 }
 
+@media(max-width:800px){
+    .parrafo-icono{
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+    }
+}
 
 div .icon-card:hover{
     border-color: rgb(82, 134, 132);
+    border-inline-color: rgb(90, 121, 120);
+    background-color: #f5f6f7;
     transition-duration: 0.8s;
+
 }
 
 div .fa-brands.fa-html5 {
@@ -363,6 +371,8 @@ div .icon-card .parrafo-icono{
     display: flex;
     flex-direction: column;
     text-align: center;
+    overflow: hidden;
+    height: max-content;
 
 }
 .section-proyectos  .titulo-proyectos{
@@ -381,17 +391,86 @@ div .icon-card .parrafo-icono{
 
 
 
+
+
+
 }
 /*section-contacots */
-.contactame {
-    text-align: center;
-}
-
-.redes-sociales {
+.section-contacto-container {
+    height: 100vh;
+    padding: 20px;
+    background-color: #e9e7e7;
     display: flex;
     justify-content: center;
+
 }
 
-.links-redes-sociales li {
-    margin: 0 10px;
+.contacto-contenedor{
+    height: 80vh;
+    padding: 20px;
+    margin: 5vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: left;
+    border-radius: 20px;
+    margin: 50px;
+    border: #83b1f5;
+    border-style: solid;
+    border-width: 0,1em;
+    
+}
+
+/* .contacto-redes-sociales{
+    background-color:  #92d1b7;
+    height: 65vh;
+
+} */
+.contactame-links{
+    padding: 20px;
+    display: flex;
+}
+
+.redes-sociales{
+    padding: 30px;
+    background-color: #62dafb;
+    text-decoration: none;
+
+
+}
+
+
+.formulario-redes{
+    background-color: aquamarine;
+    height: 65vh;
+}
+
+
+.formulario-redes {
+    border-radius: 5px;
+    height: 65vh;
+    gap: 15px;
+
+}
+
+
+
+
+
+
+
+.section-footer{
+    background-color: rgb(228, 221, 213);
+    height: 32vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h2{
+    font-size: 40px;
+}
+li{
+    text-decoration: none
+}
+.links-redes-sociales {
+    text-decoration: none;
 }
