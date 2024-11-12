@@ -37,7 +37,7 @@ header {
 
 header .nav-header{
     padding: 20px;
-    
+
 }
 header .nav-item{
     display: inline-block;
@@ -52,7 +52,7 @@ header .link-nav{
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 20px;
-    
+
 }
 
 header .link-nav-contact{
@@ -103,12 +103,11 @@ header .link-nav-contact:hover{
     flex-direction: column;
 
 
-   
 }
 
 main section {
     height: 125vh;
-    padding: 10vh 5%;
+    padding: 10vh ;
     overflow: hidden;
 
 }
@@ -130,13 +129,13 @@ main section {
     align-items: normal;
 }
 
-@media (max-width: 900px) {  
-    .presentacion-section {  
-        padding: 100px 50px;  
-        flex-direction: column;  
+@media (max-width: 900px) {
+    .presentacion-section {
+        padding: 100px 50px;
+        flex-direction: column;
         align-items: last baseline;
-    }  
-} 
+    }
+}
 
 
 
@@ -144,11 +143,11 @@ main section {
     padding: 16vh;
 
 }
-@media (max-width: 900px) {  
-    .presentacion-section .intro {  
+@media (max-width: 900px) {
+    .presentacion-section .intro {
         padding: 7vh;
-    }  
-}    
+    }
+}
 
 
 
@@ -205,9 +204,6 @@ main section {
     }
 
 }
-
-
-
 
 
 
@@ -311,6 +307,9 @@ div .icon-card:hover{
     border-color: rgb(82, 134, 132);
     border-inline-color: rgb(90, 121, 120);
     background-color: #f5f6f7;
+    border-color: #6da899;
+    box-shadow: 1px 4px 10px rgba(74, 88, 85, 0.5); /* Sombra */ 
+    transition-duration: 0.8s;
     transition-duration: 0.8s;
 
 }
@@ -345,8 +344,10 @@ div .icon-card .parrafo-icono{
 
 
 
+
+/*section de frase*/
 .section-frase{
-    
+
     text-align: center;
     align-items: center;
     background-color: #90b6cf;
@@ -360,11 +361,18 @@ div .icon-card .parrafo-icono{
 .section-frase .imagen-comillas{
     height: 100px;
     width: 100px;
-    
+
 }
 .section-frase .frase-comillas{
     padding: 60px;
 }
+/*termino section de frase*/
+
+
+
+
+
+
 
 .section-proyectos{
     padding: 10vh;
@@ -373,6 +381,7 @@ div .icon-card .parrafo-icono{
     text-align: center;
     overflow: hidden;
     height: max-content;
+    background-color: #ccc9c6;
 
 }
 .section-proyectos  .titulo-proyectos{
@@ -385,73 +394,130 @@ div .icon-card .parrafo-icono{
     font-size: 18px;
     font-family: "Istok Web", sans-serif;
     font-weight: bolder;
-
-
-
-
-
-
-
-
-
 }
-/*section-contacots */
-.section-contacto-container {
-    height: 100vh;
-    padding: 20px;
-    background-color: #e9e7e7;
+
+/*termino section de frase*/
+
+
+
+
+
+/*section de formulario contacto*/
+.section-contacto {
+    height: 120vh;
+    background-color: #eee4e4;
     display: flex;
     justify-content: center;
+    font-size: 20px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    
 
 }
 
-.contacto-contenedor{
+.section-contacto .caja-formulario{
+    height: 80vh;
+    background-color: #ffffff;
+    display: flex;
+    padding: 30px;
+    align-items: baseline;
+    /* color: #610834;
+    word-break: break-word;
+    line-break: normal;
+    hyphens: auto;
+    overflow-wrap: break-word; */
+
+
+}
+
+.section-contacto .formulario-redes{
+
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 10px;
+    height: max-content;
+    border-radius: 20px;
+    font-size: medium;
+    
+}
+
+.section-contacto .redes-sociales{
+    padding: 10px;
+    margin: 10px;
+    font-weight: lighter;
+    font-size: small;
+    
+
+}
+.section-contacto .formulario-redes .escribeme-titulo{
+    padding: 10px;
+    padding-left: 1%;
+    padding-right: 35px;
+    text-align: left;
+    border-radius: 20px;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2e2f30;
+}
+
+.contactame-titulo{
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2e2f30;
+    font-size: 4vh;
+}
+.escribime-titulo-h2{
+    font-size: 4vh;
+    color: #2e2f30;
+
+    
+}
+
+.formulario-redes .form{
+    padding: 13px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #b8beba;
+    font-weight: lighter;
+    font-size: small;
+
+
+}
+
+.formulario-redes .form:hover{
+    border-color: #6da899;
+    box-shadow: 1px 4px 10px rgba(34, 97, 81, 0.5); /* Sombra */ 
+    transition-duration: 0.8s;
+}
+
+.section-contacto .contacto-contenedor{
     height: 80vh;
     padding: 20px;
     margin: 5vh;
     background-color: #ffffff;
     display: flex;
-    justify-content: left;
-    border-radius: 20px;
-    margin: 50px;
-    border: #83b1f5;
-    border-style: solid;
-    border-width: 0,1em;
-    
+
 }
 
-/* .contacto-redes-sociales{
-    background-color:  #92d1b7;
-    height: 65vh;
+.section-contacto .contacto-contenedor .contacto-redes-sociales{
+    background-color:  #c7cecb;
+    height: 80vh;
 
-} */
-.contactame-links{
+}
+
+.contacto-redes-sociales  .contactame-links{
     padding: 20px;
-    display: flex;
-}
-
-.redes-sociales{
-    padding: 30px;
-    background-color: #62dafb;
-    text-decoration: none;
-
-
+    text-align: left;
 }
 
 
-.formulario-redes{
-    background-color: aquamarine;
-    height: 65vh;
-}
-
-
-.formulario-redes {
-    border-radius: 5px;
-    height: 65vh;
-    gap: 15px;
+.contacto-redes-sociales .redes-sociales{
+    margin: 10px;
+    padding: 2px;
 
 }
-
 
 
 
@@ -459,18 +525,23 @@ div .icon-card .parrafo-icono{
 
 
 .section-footer{
-    background-color: rgb(228, 221, 213);
+    background-color: rgb(177, 173, 169);
     height: 32vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
+
 h2{
     font-size: 40px;
+
 }
-li{
-    text-decoration: none
+
+
+.redes-sociales-footer {
+    background-color: #c28071;
+    outline: auto;
+
 }
-.links-redes-sociales {
-    text-decoration: none;
-}
+
