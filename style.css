@@ -8,6 +8,7 @@ body {
     font-style: normal;
     padding: 0%;
     margin: 0%;
+    
 }
 
 /* aplicando estilo al header*/
@@ -412,6 +413,7 @@ div .icon-card .parrafo-icono{
     font-family: "Istok Web", sans-serif;
     font-weight: bold;
     
+    
 
 }
 
@@ -421,12 +423,7 @@ div .icon-card .parrafo-icono{
     display: flex;
     padding: 30px;
     align-items: baseline;
-    /* color: #610834;
-    word-break: break-word;
-    line-break: normal;
-    hyphens: auto;
-    overflow-wrap: break-word; */
-
+    height: max-content;
 
 }
 
@@ -438,58 +435,52 @@ div .icon-card .parrafo-icono{
     height: max-content;
     border-radius: 20px;
     font-size: medium;
+    text-decoration: none;
     
 }
+
+
 
 .section-contacto .redes-sociales{
     padding: 10px;
     margin: 10px;
     font-weight: lighter;
-    font-size: small;
+    
     
 
 }
-.section-contacto .formulario-redes .escribeme-titulo{
+
+.redes-sociales .links-redes-sociales .lista-redes .link{
+    padding: 5px;
+    text-decoration: none;
+    color: #2e2f30;
+    display: inline-block;
+    text-decoration: none;
     padding: 10px;
-    padding-left: 1%;
-    padding-right: 35px;
-    text-align: left;
-    border-radius: 20px;
-    font-family: "Chango", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #2e2f30;
+    list-style: none;
+    
+    
+
+    
+
 }
 
-.contactame-titulo{
-    font-family: "Chango", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #2e2f30;
-    font-size: 4vh;
-}
-.escribime-titulo-h2{
-    font-size: 4vh;
-    color: #2e2f30;
+.redes-sociales .links-redes-sociales .lista-redes .link:hover{
+    padding-inline-start: 20px;
+    border-radius: 15px; 
+    color: #6baa99;
+    font-weight: bold;
+    transition-duration: 0.5s;
+
 
     
 }
 
-.formulario-redes .form{
-    padding: 13px;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: #b8beba;
-    font-weight: lighter;
-    font-size: small;
+.links-redes-sociales{
+    text-decoration: none;
+    padding: 30px;
 
 
-}
-
-.formulario-redes .form:hover{
-    border-color: #6da899;
-    box-shadow: 1px 4px 10px rgba(34, 97, 81, 0.5); /* Sombra */ 
-    transition-duration: 0.8s;
 }
 
 .section-contacto .contacto-contenedor{
@@ -508,8 +499,9 @@ div .icon-card .parrafo-icono{
 }
 
 .contacto-redes-sociales  .contactame-links{
-    padding: 20px;
-    text-align: left;
+    padding: 0px;
+    
+    
 }
 
 
@@ -517,6 +509,65 @@ div .icon-card .parrafo-icono{
     margin: 10px;
     padding: 2px;
 
+
+}
+
+
+
+.section-contacto .formulario-redes .escribeme-titulo{
+    padding: 10px;
+    padding-left: 1%;
+    padding-right: 35px;
+    text-align: left;
+    border-radius: 20px;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2e2f30;
+}
+
+.contactame-titulo{
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    color: #2e2f30;
+    font-size: 4vh;
+    /* /*overflow-wrap: break-word; */
+
+}
+.escribime-titulo-h2{
+    font-size: 4vh;
+    color: #2e2f30;
+
+    
+}
+ul{
+    list-style-type: none;
+}
+
+.formulario-redes .form{
+    padding: 13px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #b8beba;
+    font-weight: lighter;
+    font-size: small;
+
+
+}
+.formulario-titulo{
+    border-inline-color: red;
+
+}
+.formulario-titulo:hover{
+    padding: 2px;
+    box-shadow: 1px 4px 10px rgba(74, 88, 85, 0.5); /* Sombra */ 
+    transition-duration: 0.8s;
+
+}
+.formulario-redes .form:hover{
+    border-color: #508a7b;
+    box-shadow: 1px 4px 10px rgba(13, 41, 34, 0.5); /* Sombra */ 
+    transition-duration: 0.8s;
 }
 
 
@@ -524,14 +575,8 @@ div .icon-card .parrafo-icono{
 
 
 
-.section-footer{
-    background-color: rgb(177, 173, 169);
-    height: 32vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 
-}
+
 
 h2{
     font-size: 40px;
@@ -541,7 +586,139 @@ h2{
 
 .redes-sociales-footer {
     background-color: #c28071;
-    outline: auto;
+    padding: 30px;
+    
+
+
+}footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  footer a {
+    color: #315f59;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+footer {  
+    background-color: #445b75; /* color púrpura */  
+    color: white;  
+    text-align: center;  
+    padding: 20px 0; 
+    
+}  
+
+.footer-content {  
+    max-width: 1200px;  
+    margin: auto;  
+}  
+
+.footer-links {  
+    list-style: none;  
+    padding: 0;  
+}  
+
+.footer-links li {  
+    display: inline-flex;
+    justify-content: space-between;
+    margin:  20px;  
+}  
+
+.footer-links a {  
+    text-decoration: none;  
+    color: rgb(255, 255, 255);  
+}  
+
+
+
+div .fa-solid.fa-envelope{
+    margin: 10px;
+    color:#000000 ;
+    padding: 13px;
+    font-size: 24px;
+    border-radius: 50%;
+    border-color: #b8beba;
+    background-color: #b8beba;
+}
+
+.fa-brands.fa-github-alt{
+    color: #000000;
+    padding: 13px;
+    font-size: 24px;
+    border-radius: 50%;
+    border-color: #b8beba;
+    background-color: #b8beba;
+    margin: 10px;
+}
+
+.fa-brands.fa-twitter{
+    color: #000000;
+    padding: 13px;
+    font-size: 24px;
+    border-radius: 50%;
+    border-color: #b8beba;
+    background-color: #b8beba;
+    margin: 10px;
+
 
 }
 
+.fa-brands.fa-linkedin{
+    color: #000000;
+    padding: 13px;
+    font-size: 24px;
+    border-radius: 50%;
+    border-color: #b8beba;
+    background-color: #b8beba;
+    margin: 10px;
+
+}
+
+
+.fa-brands.fa-github-alt:hover{
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border-color: #b8beba;
+    background-color: #b8beba;
+    transition-duration: 0.5s;
+
+}
+
+.fa-brands.fa-twitter:hover{
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border-color: #b8beba;
+    background-color: #b8beba;
+    transition-duration: 0.5s;
+
+}
+.fa-brands.fa-linkedin:hover{
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border-color: #b8beba;
+    background-color: #b8beba;
+    transition-duration: 0.5s;
+
+}
+
+
+
+.fa-solid.fa-envelope:hover{
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-color: #b8beba;
+    transition-duration: 0.5s;
+
+
+}
