@@ -6,7 +6,6 @@ body {
     font-family: "Istok Web", sans-serif;
     font-weight: 700;
     font-style: normal;
-    padding: 0%;
     margin: 0%;
     
 }
@@ -94,22 +93,23 @@ header .link-nav-contact:hover{
 
 
 
-
-
-
-
- .contenedor{
+.contenedor{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 
 }
 
 main section {
     height: 125vh;
     padding: 10vh ;
-    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -374,7 +374,7 @@ div .icon-card .parrafo-icono{
 
 
 
-
+/*empiezo section de proyectos*/
 .section-proyectos{
     padding: 10vh;
     display: flex;
@@ -396,67 +396,128 @@ div .icon-card .parrafo-icono{
     font-family: "Istok Web", sans-serif;
     font-weight: bolder;
 }
-
-/*termino section de frase*/
-
-
-
-
-
-/*section de formulario contacto*/
-.section-contacto {
-    height: 120vh;
-    background-color: #eee4e4;
+.img-proyecto{
+    display: block;
+    height: 270px;
+    border-radius: 10px;
+}
+div .icon-card-proyectos{
+    
     display: flex;
-    justify-content: center;
-    font-size: 20px;
-    font-family: "Istok Web", sans-serif;
-    font-weight: bold;
-    
-    
+    flex-direction: column;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: rgb(211, 211, 211);
+    margin: 20px;
+    width: 270px;
+    height: 270px;
+    font-size: 4.71em ;
+}
+div .icon-card-proyectos:hover{
+    border-color: rgb(82, 134, 132);
+    border-inline-color: rgb(90, 121, 120);
+    background-color: #f5f6f7;
+    border-color: #6da899;
+    box-shadow: 1px 4px 10px rgba(74, 88, 85, 0.5); /* Sombra */ 
+    transition-duration: 0.8s;
+    transition-duration: 0.8s;
 
 }
 
+@media(max-width:800px){
+    .parrafo-icono-proyectos{
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+div .parrafo-icono-proyectos{
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(115, 119, 119);
+}
+
+
+
+
+/*termino section de proyectos*/
+
+
+
+
+
+/* section de formulario contacto
+.section-contacto {
+    background-color: #917474;
+    display: flex;
+    font-size: 20px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: bold;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    
+    
+
+} */
+
+
 .section-contacto .caja-formulario{
+    display: flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
     height: 80vh;
     background-color: #ffffff;
-    display: flex;
-    padding: 30px;
-    align-items: baseline;
-    height: max-content;
+    padding-inline: 50vh;
+    
 
+}
+@media screen {
+    
 }
 
 .section-contacto .formulario-redes{
 
     background-color: #ffffff;
-    padding: 30px;
-    margin: 10px;
-    height: max-content;
-    border-radius: 20px;
+    padding: 20px;
     font-size: medium;
     text-decoration: none;
+    padding-top: 5%;
+    height: min-content;
     
 }
 
 
 
-.section-contacto .redes-sociales{
-    padding: 10px;
-    margin: 10px;
-    font-weight: lighter;
+.section-contacto .contacto-redes-sociales{
+    width: auto;
+    background-color: #ffffff;
+    font-size: medium;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 4%;
+    height: min-content;
+
     
     
 
 }
 
+.redes-sociales .links-redes-sociales{
+    display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   background-color: #ffffff;
+   padding-right: 12vh;
+
+}
 .redes-sociales .links-redes-sociales .lista-redes .link{
-    padding: 5px;
+    padding: 3px;
     text-decoration: none;
     color: #2e2f30;
-    display: inline-block;
     text-decoration: none;
-    padding: 10px;
     list-style: none;
     
     
@@ -478,28 +539,23 @@ div .icon-card .parrafo-icono{
 
 .links-redes-sociales{
     text-decoration: none;
-    padding: 30px;
-
+    padding: 14px;
 
 }
 
-.section-contacto .contacto-contenedor{
-    height: 80vh;
+.section-contacto {
+    height: 120vh;
     padding: 20px;
-    margin: 5vh;
-    background-color: #ffffff;
+    margin: 10vh;
     display: flex;
-
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.section-contacto .contacto-contenedor .contacto-redes-sociales{
-    background-color:  #c7cecb;
-    height: 80vh;
-
-}
 
 .contacto-redes-sociales  .contactame-links{
-    padding: 0px;
+    padding: 16px;
     
     
 }
@@ -507,7 +563,7 @@ div .icon-card .parrafo-icono{
 
 .contacto-redes-sociales .redes-sociales{
     margin: 10px;
-    padding: 2px;
+    padding: 10px;
 
 
 }
@@ -526,6 +582,25 @@ div .icon-card .parrafo-icono{
     color: #2e2f30;
 }
 
+.boton-enviar{
+    padding: 20px;
+    background-color: rgb(44, 87, 107);
+    border-radius: 15px;
+    margin: 20px;
+    display: flex;
+    color: #e4d9de;
+}
+.boton-enviar:hover{
+    border-color: #ffffff;
+    box-shadow: 1px 4px 10px rgba(40, 87, 139, 0.5); 
+    border-radius: 13px;
+    margin: 18px;
+    background-color: #ffffff;
+    color: #000000;
+
+    transition-duration: 0.3s;
+
+}
 .contactame-titulo{
     font-family: "Chango", sans-serif;
     font-weight: 400;
@@ -554,13 +629,29 @@ ul{
 
 
 }
-.formulario-titulo{
-    border-inline-color: red;
+.formulario-redes .form-mensaje{
+    padding: 40px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #b8beba;
+    font-weight: lighter;
+    font-size: small;
 
 }
+
+.formulario-titulo{
+    display: flex;
+    padding: 15px;
+
+
+}
+.formulario-redes .form-mensaje:hover{
+    border-color: #508a7b;
+    box-shadow: 1px 4px 10px rgba(13, 41, 34, 0.5); /* Sombra */ 
+    transition-duration: 0.8s;
+}
 .formulario-titulo:hover{
-    padding: 2px;
-    box-shadow: 1px 4px 10px rgba(74, 88, 85, 0.5); /* Sombra */ 
+    color: #55626e;
     transition-duration: 0.8s;
 
 }
@@ -569,11 +660,6 @@ ul{
     box-shadow: 1px 4px 10px rgba(13, 41, 34, 0.5); /* Sombra */ 
     transition-duration: 0.8s;
 }
-
-
-
-
-
 
 
 
@@ -669,7 +755,6 @@ div .fa-solid.fa-envelope{
 
 
 }
-
 .fa-brands.fa-linkedin{
     color: #000000;
     padding: 13px;
@@ -680,8 +765,6 @@ div .fa-solid.fa-envelope{
     margin: 10px;
 
 }
-
-
 .fa-brands.fa-github-alt:hover{
     color: #ffffff;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -691,7 +774,6 @@ div .fa-solid.fa-envelope{
     transition-duration: 0.5s;
 
 }
-
 .fa-brands.fa-twitter:hover{
     color: #ffffff;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
@@ -710,9 +792,6 @@ div .fa-solid.fa-envelope{
     transition-duration: 0.5s;
 
 }
-
-
-
 .fa-solid.fa-envelope:hover{
     color: #ffffff;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);

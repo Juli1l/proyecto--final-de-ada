@@ -28,18 +28,10 @@
         <!--navigation menu start-->
         <nav >
             <ul class="nav-header">
-                <li class="nav-item">
-                    <a href="#about" class="link-nav">HOLA</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="link-nav">CONOCIMIENTOS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="link-nav">PROYECTOS</a>
-                </li>
-                <li class="nav-item-contact">
-                    <a href="#contact" class="link-nav-contact">CONTACTO</a>
-                </li>
+                <li class="nav-item"><a href="#about" class="link-nav">HOLA</a></li>
+                <li class="nav-item"><a href="#skills" class="link-nav">CONOCIMIENTOS</a></li>
+                <li class="nav-item"><a href="#projects" class="link-nav">PROYECTOS</a></li>
+                <li class="nav-item-contact"><a href="#contact" class="link-nav-contact">CONTACTO</a></li>
             </ul>
         </nav>
         <!--end of navigation menu-->
@@ -137,32 +129,43 @@
             <p class="parrafo-proyectos">A lo largo de mi formación en Ada fui perfeccionandome en las siguientes áreas:</p>
             <div class="cards-skills">
 
-                <div class="icon-card">
+                <div class="icon-card-proyectos">
+                    <img src="imagenes\portafolio.jpg" alt="portfolio" class="img-proyecto" />
+                    <p class="parrafo-icono-proyectos">portfolio</p> 
                     
                 </div>
 
-                <div class="icon-card">
-                    
+                <div class="icon-card-proyectos">
+                    <img src="imagenes\generador-de-memes.jpg" alt="generador-de-memes" class="img-proyecto" /> 
+                    <p class="parrafo-icono-proyectos">Generador de memes</p> 
                 </div>
-                <div class="icon-card">
-                    
+                <div class="icon-card-proyectos">
+                    <img src="imagenes\match.png" alt="match3" class="img-proyecto" /> 
+                    <p class="parrafo-icono-proyectos">Match 3</p> 
                 </div>
-                <div class="icon-card">
-                    
+                <div class="icon-card-proyectos">
+                    <img src="imagenes\billetera-digital.jpg" alt="controlador de gastos"class="img-proyecto"  /> 
+                    <p class="parrafo-icono-proyectos">Controlador de gastos</p> 
                 </div>
-                <div class="icon-card">
-                    
+                <div class="icon-card-proyectos">
+                    <img src="imagenes\calendario.jpg" alt="administrador de reuniones" class="img-proyecto" /> 
+                    <p class="parrafo-icono-proyectos">Administrador de reuniones</p> 
                 </div>
-                <div class="icon-card">
-                    
+                <div class="icon-card-proyectos">
+                    <img src="imagenes\app.png" alt="aplicacion" class="img-proyecto" /> 
+                    <p class="parrafo-icono-proyectos">Aplicación</p> 
                 </div>
-                <div class="Buscador de peliculas">
+                <div class="icon-card-proyectos">
+                    <img src="imagenes\buscador-de-peliculas.jpg" alt="buscador de peliculas"  class="img-proyecto"/> 
+                    <p class="parrafo-icono-proyectos">Buscador de peliculas</p> 
                 </div>
             </div>
         </section>
         <!--section 4 end-->
 
 
+
+        
 
 
         <!-- section 5 start -->
@@ -198,47 +201,49 @@
                     </div>
                 </section>
 
-                <section class="formulario-redes" id="contact">
+                <form class="formulario-redes" id="contact">
 
-                    <div class="escribeme-titulo">
-                        <h2 class="escribime-titulo-h2">Escribime</h2>
-                    </div>
+                        <div class="escribeme-titulo">
+                            <h2 class="escribime-titulo-h2">Escribime</h2>
+                        </div>
 
-                    <p class="formulario-titulo">Nombre *</p>
-                    <input type="text" name="nombres" class="form" id="nombres" placeholder="p.ej: Juana">
-                    <p class="formulario-titulo">Apellido*</p>
-                    <input type="text" name="apellido"  class="form" id="apellido" placeholder="p.ej: Perez">
-                    <p class="formulario-titulo">Correo*</p>
-                    <input type="email" name="correo"  class="form"id="correo" placeholder="p.ej adalove@gmail.com">
-                    <P class="formulario-titulo">Escribe un mensaje</P>
-                    <input type="text" name="mensaje"  class="form"id="mensaje" placeholder="Escriba su mensaje aqui">
+                        <label class="formulario-titulo">Nombre *</label>
+                        <input type="text" name="nombres" class="form" id="nombres" placeholder="p.ej: Juana">
+                        <label class="formulario-titulo">Apellido*</label>
+                        <input type="text" name="apellido"  class="form" id="apellido" placeholder="p.ej: Perez">
+                        <label class="formulario-titulo">Correo*</label>
+                        <input type="email" name="correo"  class="form"id="correo" placeholder="p.ej adalove@gmail.com">
+                        <label class="formulario-titulo">Escribe un mensaje</label>
+                        <input type="text" name="mensaje"  class="form-mensaje"id="mensaje" placeholder="Escriba su mensaje aqui">
+                        <input type="submit" class="boton-enviar"></input>
+                </form>
 
-                </section>
             </section>
         </section>
 
             <!-- footer -->
-            <footer>  
-                <div class="footer-content">  
-                    <ul class="footer-links">  
-                        <li><a href="#">HOLA</a></li>  
-                        <li><a href="#">CONOCIMIENTOS</a></li>  
-                        <li><a href="#">PROYECTOS</a></li>  
-                        <li><a href="#">CONTACTO</a></li>  
-                    </ul>  
-                    <div class="social-media">  
-                        <i class="fa-brands fa-github-alt"></i>
-                        <i class="fa-brands fa-twitter"></i>  
-                        <i class="fa-brands fa-linkedin"></i>  
-                        <i class="fa-solid fa-envelope"></i> 
-                    </div>  
-                    <p class="texto-footer">Hecho por Juli</p>  
-                </div>  
-            </footer>  
-</main> <!-- main end -->
+           
+    </main> <!-- main end -->
+    <footer>  
+        <div class="footer-content">  
+            <ul class="footer-links">  
+                <li><a href="#">HOLA</a></li>  
+                <li><a href="#">CONOCIMIENTOS</a></li>  
+                <li><a href="#">PROYECTOS</a></li>  
+                <li><a href="#">CONTACTO</a></li>  
+            </ul>  
+            <div class="social-media">  
+                <a href="https://github.com/Juli1l?tab=repositories"><i class="fa-brands fa-github-alt"></i></a>
+                <a href="https://x.com/?lang=es"><i class="fa-brands fa-twitter"></i></a> 
+                <a href="https://www.linkedin.com/in/julieta-cantos-0614bb30b/"><i class="fa-brands fa-linkedin"></i>  </a>
+                <a href="mailto:cantosjulieta96@gmail.com?subject=Asunto%20del%20mensaje&body=Cuerpo%20del%20mensaje">  
+                    <i class="fa-solid fa-envelope"></i>  
+                </a>  
+            </div>  
+            <p class="texto-footer">Hecho por Juli</p>  
+        </div>  
+    </footer>  
 
-
-    
 </body>
 
 </main>
